@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AJAX Example</title>
+	<title>SklumaSearch 0.1</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -13,16 +13,17 @@
 	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
 </head>
 <body>
+<h3> SklumaSearch 0.1 </h3>
 <div class="container">
 	<br><br><br><br>
 	<form class="form-inline">
 	  <div class="form-group">
-	    <label class="sr-only" for="emailInput">Email address</label>
-	    <input type="email" class="form-control" id="emailInput" placeholder="Email">
+	    <label class="sr-only" for="queryInput">Query</label>
+	    <input type="text" class="form-control" id="queryInput" placeholder="Search Query">
 	  </div>
 	  <div class="form-group">
-	    <label class="sr-only" for="nameInput">Name</label>
-	    <input type="text" class="form-control" id="nameInput" placeholder="First Name">
+	    <label class="sr-only" for="topicInput">Topic</label>
+	    <input type="text" class="form-control" id="topicInput" placeholder="Topic(s)">
 	  </div>
 	  <button type="submit" class="btn btn-default">Submit</button>
 	</form>

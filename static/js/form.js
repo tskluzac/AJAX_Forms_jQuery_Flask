@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 		$.ajax({
 			data : {
-				name : $('#nameInput').val(),
-				email : $('#emailInput').val()
+				topic : $('#topicInput').val(),
+				query : $('#queryInput').val()
 			},
 			type : 'POST',
 			url : '/process'
@@ -17,7 +17,7 @@ $(document).ready(function() {
 				$('#successAlert').hide();
 			}
 			else {
-				$('#successAlert').text(data.name).show();
+				$('#successAlert').text(data.callback).show();
 				$('#errorAlert').hide();
 			}
 
